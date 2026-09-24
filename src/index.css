@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm earthy theme: 
+       Deep Forest Green (#4A5D4E) -> HSL 132 11% 33%
+       Warm Beige background (#F7F5F0) -> HSL 43 29% 95%
+       Warm Charcoal text (#2D2926) -> HSL 24 8% 16%
+       Warm Amber Gold accent (#D98A39) -> HSL 30 67% 54%
+       Deep Warm Brown footer (#3D2F24) -> HSL 26 26% 19%
+    */
+    --background: 43 29% 95%;
+    --foreground: 24 8% 16%;
+
+    --card: 40 25% 98%;
+    --card-foreground: 24 8% 16%;
+
+    --popover: 40 25% 98%;
+    --popover-foreground: 24 8% 16%;
+
+    --primary: 132 11% 33%;
+    --primary-foreground: 43 29% 97%;
+
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 24 8% 20%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 24 6% 42%;
+
+    --accent: 30 67% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 38 18% 86%;
+    --input: 38 18% 86%;
+    --ring: 132 11% 33%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 132 11% 33%;
+    --sidebar-foreground: 43 29% 95%;
+    --sidebar-primary: 30 67% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 132 11% 25%;
+    --sidebar-accent-foreground: 43 29% 95%;
+    --sidebar-border: 132 11% 28%;
+    --sidebar-ring: 30 67% 54%;
+  }
+
+  .dark {
+    --background: 24 15% 12%;
+    --foreground: 43 29% 93%;
+
+    --card: 24 12% 16%;
+    --card-foreground: 43 29% 93%;
+
+    --popover: 24 12% 16%;
+    --popover-foreground: 43 29% 93%;
+
+    --primary: 132 15% 45%;
+    --primary-foreground: 43 29% 97%;
+
+    --secondary: 24 10% 22%;
+    --secondary-foreground: 43 29% 93%;
+
+    --muted: 24 10% 20%;
+    --muted-foreground: 40 10% 70%;
+
+    --accent: 30 67% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 24 10% 24%;
+    --input: 24 10% 24%;
+    --ring: 30 67% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-serif {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+}
